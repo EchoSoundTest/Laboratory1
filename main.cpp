@@ -50,6 +50,7 @@ int main()
             scanf("%f%f%f%f",&x1,&x2,&y1,&y2);
             ab = sqrt(pow((x2-x1),2)+pow((y2-y1),2));
             printf("%f",ab);
+            break;
         }
         case 5: {
             float r;
@@ -58,6 +59,7 @@ int main()
             scanf("%f",&r);
             l = 2*r*M_PI;
             printf("%f",l);
+            break;
         }
         case 6: {
             float a;
@@ -70,6 +72,7 @@ int main()
             p = (a+b+c)/2;
             s = sqrt(p*(p-a)*(p-b)*(p-c));
             printf("%f",s);
+            break;
         }
         case 7: {
             int n;
@@ -78,6 +81,7 @@ int main()
             scanf("%d",&n);
             s = (float)(n*(n+1)*(2*n+1))/6;
             printf("%f",s);
+            break;
         }
         case 8: {
             float r;
@@ -86,6 +90,7 @@ int main()
             scanf("%f",&g);
             r = g*M_PI/180;
             printf("%f",r);
+            break;
         }
         case 9: {
             float r;
@@ -94,6 +99,7 @@ int main()
             scanf("%f",&r);
             g = 180*r/M_PI;
             printf("%f",g);
+            break;
         }
         case 10: {
             float a;
@@ -104,6 +110,7 @@ int main()
             scanf("%f%f%f",&a,&b,&h);
             s = (a+b)*h/2;
             printf("%f",s);
+            break;
         }
         case 11: {
             float m;
@@ -112,6 +119,7 @@ int main()
             scanf("%f",&m);
             d = m/25.4;
             printf("%f",d);
+            break;
         }
         case 12: {
             float m;
@@ -120,6 +128,7 @@ int main()
             scanf("%f",&d);
             m = 0.0254*d;
             printf("%f",m);
+            break;
         }
         case 13: {
             float a;
@@ -131,6 +140,7 @@ int main()
             scanf("%f%f%f%f",&a,&b,&c,&r);
             s = (a+b+c)*r/2;
             printf("%f",s);
+            break;
         }
         case 14: {
             float u;
@@ -141,6 +151,7 @@ int main()
             scanf("%f%f%f",&u,&r1,&r2);
             i = u*(r1+r2)/(r1*r2);
             printf("%f",i);
+            break;
         }
         case 15: {
             float v;
@@ -151,6 +162,7 @@ int main()
             scanf("%f%f%f",&s0,&s,&t);
             v = (s-s0)/t;
             printf("%f",v);
+            break;
         }
         case 16: {
             float a;
@@ -162,6 +174,7 @@ int main()
             scanf("%f%f%f%f",&a,&b,&c,&r);
             s = a*b*c/(4*r);
             printf("%f",s);
+            break;
         }
         case 17: {
             int n;
@@ -170,6 +183,7 @@ int main()
             scanf("%d",&n);
             s = (float)(n*n*pow((n*n+1),2))/4;
             printf("%f",s);
+            break;
         }
         case 18: {
             float a1;
@@ -180,6 +194,7 @@ int main()
             scanf("%f%f%f",&a1,&a2,&a3);
             ma = (a1+a2+a3)/3;
             printf("%f",ma);
+            break;
         }
         case 19: {
             int n;
@@ -188,6 +203,7 @@ int main()
             scanf("%d",&n);
             s = (float)(n*(n+1))/2;
             printf("%f",s);
+            break;
         }
         case 20: {
             float r;
@@ -196,6 +212,7 @@ int main()
             scanf("%f",&r);
             s = M_PI*r*r;
             printf("%f",s);
+            break;
         }
         case 21: {
             int n;
@@ -203,8 +220,9 @@ int main()
             float p;
             
             scanf("%d%f",&n,&r);
-            p = (float)2*n*r*sin((float)M_PI/n);
+            p = 2*(float)n*r*sin((float)M_PI/n);
             printf("%f",p);
+            break;
         }
         case 22: {
             float a1;
@@ -217,6 +235,7 @@ int main()
             scanf("%f%f%f%f%f",&a1,&a2,&a3,&a4,&a5);
             mq = sqrt((a1+a2+a3+a4+a5)/5);
             printf("%f",mq);
+            break;
         }
         case 23: {
             float x1;
@@ -230,6 +249,7 @@ int main()
             x = (x1+x2)/2;
             y = (y1+y2)/2;
             printf("%f %f",x,y);
+            break;
         }
         case 24: {
             int n;
@@ -240,6 +260,7 @@ int main()
             scanf("%d%f%f",&n,&a1,&d);
             an = a1+(float)(n-1)/d;
             printf("%f",an);
+            break;
         }
         default: 
             printf("Номер некорректен");
